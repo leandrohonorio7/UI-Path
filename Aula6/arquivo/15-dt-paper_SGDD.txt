@@ -1,0 +1,405 @@
+SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+Short game design document (SGDD)
+Documento de game design aplicado a jogos de pequeno porte e advergames 
+Um estudo de caso do advergame Rockergirl Bikeway
+
+Rodrigo L. Motta, M.Sc. José Trigueiro Junior, Tecgº
+Curso Superior de Jogos Digitais Curso Superior de Jogos Digitais
+Faculdade de Ciências Sociais Aplicadas FACISA Faculdade de Ciências Sociais Aplicadas FACISA
+Campina Grande, Brasil Campina Grande, Brasil
+rodrigo@kaipora.com trigueiro@kaipora.com
+
+Resumo  —  Este  artigo  demonstra  a  aplicação  de  uma  tipos,  porém diversos  aspectos dos  modelos  de  GDD  mais 
+ferramenta textual-teórica, com características de documento de  populares, como  os apresentados por  Jeannie Novak  [3]  ou 
+design de jogo (game  design document  ou GDD),  concebido a  Chris  Taylor  acabam  gerando  um  documento  extenso, 
+partir  da investigação  de  diversos  modelos de  GDD  e  outros  composto  por  muito  texto,  muitos  gráficos  e  imagens,  de 
+métodos  de  documentação,  para  fazer  parte  do  processo  de  modo que a própria concepção já se torna uma grande etapa a 
+desenvolvimento de  um jogo de pequeno porte  ou advergame.  ser vencida no processo de desenvolvimento de um jogo.
+Partiu-se  do  pressuposto  que  os  modelos  de  GDD  que  se 
+tornaram padrão, em geral, são inadequados para aplicação em    Em  grandes  projetos  de  jogos,  principalmente  o 
+jogos curtos, por serem concebidos para documentar aspectos de  mercado  de  jogos  "AAA",  esses  documentos  são 
+design com  detalhamento  que  não  é  necessário para  jogos de  extremamente necessários e sua concepção baseada no modelo 
+pequeno  porte.  Ademais,  é  comum  que  os  designers  não  padrão  contribui  significativamente  para  a  qualidade  e 
+disponham de tempo suficiente para a concepção de documentos  detalhamento das ideias e principalmente para a comunicação 
+de  design  complexos,  principalmente  no  contexto  de 
+desenvolvimento  rápido  para game  jams ou  advergames.  Este  com  os diversos agentes  envolvidos no desenvolvimento do 
+artigo demonstra a formatação deste documento curto de design  jogo,  que  em  geral  preocupam-se  em  observar  no  GDD 
+de jogo (short game design document ou SGDD) e a aplicação do  informações pertinentes  a  sua  área  de  atuação. No  entanto, 
+mesmo no desenvolvimento do advergame Rockergirl Bikeway. estes modelos perdem um pouco o sentido quando aplicados 
+num  contexto  de  jogos  de  pequeno  porte,  jogos  feitos  de 
+Palavras-Chave:  game  design,  game  design  document,  forma  rápida,  em  game  jams  ou  mesmo  advergames, 
+advergames, game jams desenvolvidos  por  equipes  pequenas  com  prazos  curtos. 
+I. INTRODUÇÃO Todavia,  mesmo  nestas  condições  se  faz  necessário  um 
+  Nos  primórdios  do  desenvolvimento  de  jogos  o  documento-guia  para  o  projeto,  mas  que  pode  ter  uma 
+processo  produtivo  era  praticamente  artesanal,  grupos  configuração  mais  adequada  para  este  contexto. O  objetivo 
+pequenos se organizavam para  conceber, produzir  e publicar  deste estudo foi verificar a aplicação de um documento curto 
+jogos.  Com  o  crescimento  do  mercado  e  o  aumento  da  de design de jogo (short game design document, ou SGDD) no 
+complexidade  dos  jogos,  as  equipes  de  desenvolvimento  processo  de  desenvolvimento  do  advergame  Rockergirl 
+foram crescendo, chegando  a  ter  mais de  cem  pessoas  para  Bikeway,  desenvolvido  pela  empresa  Kaipora  Digital  de 
+produzir  um  jogo. Além  disso,  os  papéis  que  antes  eram  Campina Grande, PB.
+ocupados  por  membros  do  pequeno  grupo,  agora  se  II. GAME DESIGN DOCUMENTS
+multiplicam em diversas áreas com a necessidade  de vários 
+profissionais  especializados.  Hoje  em  dia  existem  várias    O  documento  de  design  de  jogo,  ou  GDD  (game 
+ferramentas  teóricas  além  de  diversos  procedimentos  design document) é uma ferramenta textual produzida por um 
+utilizados para que jogos cada vez mais complexos possam ser  game  designer  que  descreve  todas  as características  de  um 
+produzidos [1]. jogo,  desde  informações  básicas  de  premissa,  conceitos, 
+  Uma destas ferramentas é o documento de design do  passando  por  personagens  e  cenários,  informações  mais 
+jogo  ou  game  design  document  (GDD).  Trata-se  um  detalhadas como projeto de  levels e  até  sons. Muitas vezes, 
+documento  de texto, em geral bem ilustrado, concebido por  esse  documento  é  chamado  de  "bíblia"  do  jogo,  sendo 
+um game designer e  que descreve  diversos elementos de um  realmente usado como uma Bíblia, uma referência para todos 
+jogo, como estética, narrativa, mecânicas, etc, tendo a função  os envolvidos no desenvolvimento do projeto, mantendo todos 
+de comunicar e  guiar os diversos envolvidos no processo de  ligados aos mesmos objetivos [4].
+desenvolvimento  do  jogo  [2].  Este  artefato  é  objeto  de    Pesquisadores do desenvolvimento de games afirmam 
+diversas discussões pois não existe um padrão a ser seguido,  que ele é necessário para os games, assim como no mercado 
+sendo responsabilidade do game designer escolher um modelo  de  software,  de  documentação  do  projeto.  No  entanto,  o 
+de documento que mais se adequa as necessidades do jogo. A  conteúdo  ainda  é  alvo  de  debates.  Faz-se  necessário  um 
+maioria dos modelos de GDD tende a ser genéricos, para que  modelo estruturado de informações que possam guiar a equipe 
+possam ser utilizados na documentação de jogos de  todos os  de acordo com os propósitos do projeto [2]. Iniciantes tendem 
+
+115SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+a  afirmar  que  que  o  documento  não  é  lido pela  equipe  de  inicial ao game  over, relacionando os  aspectos do jogo sem 
+desenvolvimento, porém a  ideia  é  que  o mesmo seja usado  isolá-los.  Já  foi  dito  que  os  formatos  de  game  documents 
+também  como  consulta  quando  há  falta  de  informação, de  variam  de  empresa  para  empresa,  mas  todos  são  sempre 
+forma  que  todos  os  conteúdos  de  um  jogo  precisam  ser  concebidos como uma lista dividida de aspectos de mecânica, 
+descritos  de  forma  isolada.  Além  disso,  o  documento  de  interface, arte, etc.
+design também serve para  detalhar o jogo para investidores,    Neste  estudo  considerou-se  a  possibilidade  de  criar 
+ser  utilizado como base contratual de definição de  etapas de  um  documento  que  ao  ser  lido  pudesse  criar  uma  imagem 
+projeto, detalhamento de  elementos específicos do  projeto e  mental do jogo, desde o início ao fim da experiência, seguindo 
+registro de tomadas de decisão [5]. o que Rolling e Morris [10] destacaram quando afirmaram que 
+  Existem ainda  diversos  outros documentos que  são  o documento de design seja  capaz  de descrever  o jogo com 
+utilizados juntamente com os documentos de design, como por  fidelidade  tangível para  que  seja  "jogado  mentalmente". Os 
+exemplo o game design overview (resumo do jogo), detailed  documentos  de design  atuais, divididos em vários capítulos, 
+design  document  (documento  detalhado),  story  overview  com extensas descrições, acabam por dificultar a percepção da 
+(resumo da história), technical design document (documento  experiência sugerida, de forma completa. 
+de design técnico), pipeline overview (resumo do processo de    Segundo  Scott  Rogers  [11],  um  GDD  típico  é, 
+integração  de  arte),  systems  limitations  (limitações  do  ironicamente,  qualquer  coisa  menos  curto.  No  entanto  ele 
+sistema),  art  bible  (bíblia  de  arte),  concept  art  overview  explica  que  existe  um movimento tanto da  indústria  quanto 
+(resumo  do  conceito  de  arte), game  budget  (orçamento  do  academia  de  tornar  os  GDDs  tão  curtos  quanto  possíveis, 
+jogo), project schedule (cronograma  do projeto), story  bible  citando  ainda  o  trabalho  do  consultor  Mark  Cerny  que 
+(bíblia  da  história  do  jogo),  script,  game  tutorial/manual  costuma  apresentar  seus  projetos  de  jogo  em  uma  única 
+(tutorial  e  manual  do  jogo)  e  game  walkthrough  (guia  do  página.  Rogers  por  sua  vez,  utiliza  em  seus  projetos  três 
+jogo).  Cada  documento  tem uma  função específica  voltada  documentos distintos:
+para  uma  área  do  jogo:  design,  engenharia  de  software, 
+gerência, roteiro e jogadores [6]. 1. O  página-única  (Fig.  1):  documento  que  descreve  uma 
+  De  um  modo  geral,  os  documentos  de  design  visão  global  do  jogo, de  forma  que  possa  informar  não 
+apresentam uma estrutura encadeada de diversos elementos do  apenas  desenvolvedores  mais  outros  stakeholders.  É 
+jogo: conceito  do  jogo;  mecânicas  de  jogo;  interfaces  com  formado  por  diversas  informações  técnicas  como 
+usuário;  elementos gráficos  estáticos,  animados  e  de  vídeo;  plataformas, faixa etária, classificação, venda, concorrentes, 
+descrição de  personagens; enredo e  história; sons e  música;  e  muitas  vezes  desenhos  simples  e  descrição  de 
+detalhamento de levels (fases) entre outros elementos. Através  personagens.
+destes elementos é possível descrever o que um jogo deve ter,  2. O dez-páginas: este documento já pode ser considerado um 
+no  entanto, de  acordo com o  detalhamento este  documento  amplo  documento  de  design  com  um  certo  nível  de 
+pode ter de dezenas a centenas de páginas [7]. detalhamento  de  várias  características  do  jogo.  Neste 
+documento já é possível ver especificações de personagens, 
+III. SHORT GAME DESIGN DOCUMENT desafios, worldbuilding, gameplay, etc.
+  Existem  diversas  situações  nas  quais  é  necessário  3. Game document (com gráfico de ritmo incluso): Um GDD 
+criar  um jogo de  pequeno porte. Citam-se, por  exemplo, as  que se assemelha a  maioria dos outros, incluindo também 
+game  jams,  o  desenvolvimento  de  protótipos  de  teste,  na  levels de fases (chamados de gráficos de ritmo), detalhando 
+ocasião de exercícios em cursos de desenvolvimento de games  desafios, recompensas e demais detalhes.
+até o nível profissional no desenvolvimento de advergames e 
+os  jogos  casuais.  Em  muitas  destas  situações  o  tempo 
+disponível  não  é  suficiente  para  a  concepção  de  um 
+documento  de  design  nos  padrões  da  indústria,  com 
+informações estruturadas por aspectos de jogo.
+  De um modo geral, o game designer necessita de um 
+documento que possa mapear as informações suficientes para 
+descrever o  funcionamento do jogo planejado para a  equipe 
+responsável  em  implementá-lo  [8].  Sabe-se  que  os 
+documentos  de  design  não  possuem  um  formato  único  e 
+podem variar  de empresa  para  empresa, mas o importante é 
+que os mesmos registrem decisões de design e mantenham a 
+equipe a par das funcionalidades do jogo [9].
+  Quando grupos pequenos  se  reúnem para  conceber 
+um jogo é comum que as ideias sejam apresentadas de forma 
+conjunta e não explicadas de forma estruturada e separada. É  Fig. 1. Documento página-única. Rogers, 2010.
+como contar uma história. O game designer pode contar como 
+funciona  um  jogo  descrevendo  seu  funcionamento  da  tela 
+
+116SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+  Por  mais  que  faça  completo  sentido  a  utilização    O  documento  de  design  curto  é  uma  ferramenta 
+destes  documentos,  eles  representam  um  desenvolvimento  textual  que  busca  descrever  o  jogo  de  forma  linear, 
+“natural” de um projeto de jogo, num provável contexto onde  descrevendo todos os elementos que surgem na tela, história, 
+existe mais tempo disponível e também a necessidade de se  personagens, mecânicas, condições de vitória  e derrota  num 
+reportar  a  outros  stakeholders,  principalmente  da  área  de  "texto corrido", com o objetivo que o leitor possa fazer este 
+negócios.  Nenhum  dos  documentos  curtos  utilizados  por  "jogo mental" e visualizar toda a experiência, deixando claro 
+Rogers  pode ser passado a  uma  equipe  de desenvolvimento  para ele, independente  de sua  área de  atuação, como o jogo 
+com  objetivo  que  eles  comecem  a  produzir  o  jogo  funciona.  Este  seria  o  grande  diferencial  deste  modelo  de 
+imediatamente.  Também  a  forma  como  ele  apresenta  as  game  document, montar  o jogo a partir de sua  visualização, 
+informações em seus documentos  demonstra  que  todas são  como se o game  designer estivesse  descrevendo visualmente 
+ideias inicias, ou seja, não existe preocupação em detalha-las.  toda a experiência que deve ser criada. A partir do momento 
+Por fim, a  descrição de  aspectos do jogo de forma  separada  que  os  desenvolvedores  (artistas  e  programadores)  têm 
+(história, gameplay, etc)  não dá condição para que o mesmo  consciência da  experiência, do fluxo, elementos de interface, 
+seja “jogado mentalmente”, o que acontece é a  interpretação  música, gameplay, eles podem  inclusive  trabalhar  de  forma 
+de cada um dos leitores daquele documento. mais criativa, definindo inclusive a ordem de suas tarefas.
+  Nesta  pesquisa  tínhamos  como  objetivo  criar  um    Mas o objetivo deste documento não é simplesmente 
+documento  de  jogo  que  pudesse  ser  útil  para  a  etapa  de  "contar"  o jogo, mas sim, através  desta  descrição, verificar 
+desenvolvimento, um documento mais focado em descrever o  quais mecânicas devem ser programadas, quais elementos de 
+jogo  literalmente,  de  forma  curta,  de  preferencia  em  uma  interface e  arte  (sprites, animações, etc)  devem ser criados. 
+página  apenas,  e  que  pudesse  ser  utilizado  em  condições  Sendo  assim,  após  escrever  a  descrição  do  jogo,  o  game 
+críticas de desenvolvimento, como game jams ou advergames.   designer deve  marcar no texto (com cores ou algum tipo de 
+A visão proposta  por  Rolling  e  Morris, do  documento que  formatação)  os  elementos  de  arte/interface/música  e  de 
+pode ser “jogado mentalmente” acabou por  nortear todos os  programação.  Com  estes  elementos  marcados,  o  game 
+experimentos e decisões tomadas para se chegar ao design do  designer  e/ou  outros  membros da  equipe  devem  criar  uma 
+SGDD. tabela  onde  listam  os  elementos  de  arte/interface  e  de 
+  Com base nesta visão, passou-se a observar qualquer  programação.  Este  resultado  de  “texto  corrido”  com 
+forma que  game designers utilizavam para documentar jogos  marcações e tabela de arte/interface e programação é utilizado 
+nestes  contextos:  maratonas  de  produção  de  jogos  (jams),  pela equipe para guiar o desenvolvimento do jogo de pequeno 
+semanas  de  desenvolvimento  de  jogos  (como  a  PyWeek),  porte ou advergame.
+prototipagem rápida que  demandava algum tipo de anotação    É possível resumir então os procedimentos para criar 
+entre  o  game  designer  e  os  programadores,  advergames  um SGDD com as seguintes etapas:
+(principalmente com prazos curtos, como uma semana ou 15  1. Descrever de forma sintética o enredo do jogo;
+dias). Estes documentos foram observados tanto no ambiente 
+acadêmico, em disciplinas e  participação  em eventos, como  2. Descrever todo o jogo, do início ao fim, num texto corrido; 
+também  num  ambiente  profissional,  quando  era  possível  o  3. Marcar  no texto,  com cores, negrito, etc, o  conteúdo de 
+acesso aos dados e até em ambientes informais, onde muitas  arte/interface/música e mecânicas;
+vezes  guardanapos servem para  documentar  ideias  a  serem 
+realizadas. 4. Criar listas contendo os elementos de arte, interface, música 
+  Na  análise  destes  documentos, buscou-se  perceber  e programação;
+não apenas através de quê a informação era registrada (se em  5. Caso  seja  necessário, descrever  na  forma  de  desenhos  o 
+texto ou desenhos), mas principalmente qual a lógica utilizada  level design do jogo (gráfico de fluxo), que pode variar seu 
+pelos game designers para transmitir suas ideias. De um modo  tamanho dependendo do design do jogo;
+geral,  foi  possível  observar  três  comportamentos  muito    É importante deixar claro que a utilização deste tipo 
+importantes das descrições dos jogos nestes documentos, que  de  procedimento  está  relacionada  diretamente  com  dois 
+foram a base para o design do SGDD: requisitos: o primeiro é a liberdade criativa dos artistas para a 
+a) Listas - A criação de diversas listas de elementos do jogo a  concepção  da  identidade  visual do  jogo, ou se  este  jogo  já 
+serem desenvolvidos. Listas de assets, listas de mecânicas,  dispõe de algum material similar, como muitas vezes é o caso 
+listas de telas, listas de personagens, de itens, etc; de advergames onde são utilizados personagens ou marcas que 
+b)Encadeamento de Informações - O jogo era sempre descrito  já  trazem  consigo  uma  bagagem  visual  que  pode  ser 
+através  de  uma  lógica  de  encadear  as  informações,  imediatamente  aplicada  no  projeto;  em  segundo  lugar, 
+principalmente baseado na mecânica de jogo, ou seja, como  informações conceituais do projeto como premissa, backstory, 
+o jogo começa, como se desenvolve e termina; etc,  são  suprimidas  do  documento,  pois,  apesar  de  sua 
+importância  na concepção do jogo, não necessariamente são 
+c) Telas - Descrições de telas do jogo, telas iniciais, telas de  informações  cruciais  para  o  trabalho  de  um  artista  ou 
+história, telas de  comandos, telas de  jogo,  de  vitória, de  programador,  principalmente  se  a  experiência  ocorrer  num 
+derrota, etc. contexto de desenvolvimento em curtos períodos de tempo.
+
+117SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+  Com base  nesse procedimento, foi estimado que os  Em seguida foi realizado um terceiro experimento utilizando 
+SGDDs  deveriam  ser  compostos  basicamente  por  duas  esse  método,  sendo  este  num  contexto  profissional,  o 
+páginas principais: a página com a descrição literal do jogo e a  desenvolvimento  de  um  advergame  destinado  a  Feira  do 
+página com a lista de assets e rotinas de programação a serem  Empreendedor do  SEBRAE.  Este  jogo  foi  desenvolvimento 
+desenvolvidas. Atrelados a estas duas paginas poderiam existir  em 72h utilizando a tecnologia Kinect da Microsoft. Não se 
+diversos gráficos com levels projetados para o jogo.  tratava  de  uma  game  jam,  mas  o  tempo  de  projeto  e 
+desenvolvimento  foi bastante  curto,  pois tratava-se  de  uma 
+IV. ESTUDO DE CASO: ROCKERGIRL BIKEWAY ação de marketing decidida poucos dias antes do evento. Foi 
+  O SGDD vem sendo aplicado de forma sistematizada  então desenvolvido o jogo Árvore Empreendedora disponível 
+no processo de desenvolvimento de diversos jogos em game  durante todo o evento (Fig. 4).
+jams  realizadas  no  curso  de  Jogos  Digitais  da  Facisa  em 
+Campina  Grande,  Paraíba,  e  também  na  produção  de 
+advergames  na  empresa  Kaipora  Digital da  mesma  cidade, 
+surgindo da real necessidade de ter um documento concebido 
+num curto período de tempo, num contexto em que  existam 
+condições para que ele seja utilizado para dar mais agilidade 
+ao desenvolvimento dos jogos.
+  Dois  testes  iniciais  utilizando  o  SGDD  foram 
+realizados, o primeiro  na  Global  Game  Jam  2012  onde  foi 
+gerado  o  jogo  Siart  (Fig.  2)  [http://globalgamejam.org/
+2012/siart]  e  o  segundo  na  PyWeek  #14,  onde  foi 
+desenvolvido  o  jogo  The  Fabulous  Laboratory  of  Doctor 
+G o l d e i n s t e i n  ( F i g .  3 )  [ http://pyweek.org/e/
+DrGoldeinstein], sendo o primeiro realizado num período de 
+48h e o segundo num período de 72h. Fig. 4. Jogo Árvore Empreendedora. Dados do autor.
+  O  jogo que  serviu de  experimento  para  este  artigo 
+envolveu  novamente  um  contexto  profissional,  o  projeto  e 
+desenvolvimento  do  advergame  Rockergirl  Bikeway  para  a 
+empresa  de  material  escolar  Cadersil.  A  desenvolvedora 
+Kaipora Digital, empresa contratada para o serviço tinha uma 
+equipe  composta  por  um  game  designer,  um  artista,  um 
+programador  e  um  músico.  Em  se  tratando  do  primeiro 
+advergame  encomendado  pela  Cadersil,  o  briefing  foi  bem 
+“aberto”,  a  equipe  criativa  poderia  sugerir  qualquer  jogo, 
+contanto  que  o  mesmo  fosse  baseado  em  alguma  capa  de 
+caderno  da  personagem  “Rockergirl”  e  que  pudesse  ser 
+publicado na internet, jogado via browser.
+  Buscando uma capa de caderno em que a personagem 
+Fig. 2. Jogo Siart. Dados do autor. Rockergirl  estivesse  realizando  alguma  ação,  foi  escolhida 
+então uma  capa  onde  a  personagem  anda  de  bicicleta  e  em 
+seguida  aplicado os dois primeiros procedimentos: descrição 
+do jogo inteiro através de um “texto corrido” e a marcação no 
+texto do conteúdo de arte/interface/música e de programação. 
+No  documento  original,  o  conteúdo  de  arte/interface  foi 
+marcado com a cor laranja, o de programação com a cor azul e 
+as músicas e sons com a cor lilás, neste artigo serão usados o 
+negrito, sublinhado e [colchetes] respectivamente, para que o 
+sentido deste artigo não se perca se reproduzido sem cores. O 
+SGDD para o Rockergirl Bikeway foi o seguinte:
+“Começa o jogo com a tela de loading onde estão as 
+marcas das empresas envolvidas, em seguida uma 
+tela de abertura [música de fundo] com um botão 
+‘jogar’  [som:  clicar].  Clicando  em  ‘jogar’  será 
+exibida uma apresentação da história do jogo através 
+de uma história em quadrinhos onde a Rockergirl 
+recebe  um  telefonema  do  namorado, que  informa 
+que  seus  cadernos  foram  espalhados  pelo  parque 
+Fig. 3. Jogo The Fabulous Laboratory of Doctor Goldeinstein. Dados do autor.
+
+118SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+[música  de  fundo],  nesta  mesma  tela  estarão  as  - Desafios: Casca de Banana, Balde de Lixo, Skate, Óleo;
+informações dos comandos do jogo; O jogo começa  - Tela Final: 4 estados de pontuação;
+com  a  tela  já  se  movendo  e  a  Rocker  Girl  -  Tela  Final:  botões  de  Facebook,  Twitter,  Ranking  e 
+pedalando em sua bicicleta numa pista de ciclismo  jogar novamente;
+de um parque [música de fundo]. Sua velocidade é  - Site: página do jogo, página de postar no ranking, Like 
+constante e não é controlada pelo jogador, o jogador  do Facebook;
+pode apertar barra para um pulo simples [som: pulo]  Música e Sons:
+e  apertar  barra  duas  vezes  para  que  a  gatinha  - Música da tela de abertura;
+‘Princess’  pule  da  ‘cestinha’  da  bicicleta  [som:  - 4 Músicas de Levels;
+miado  da  gata],  configurando-se  como  um  pulo  - Som: clicar;
+duplo.  Ela  enfrenta  obstáculos  no  caminho  - Som: pulo;
+(buracos, latas, cascas de banana, skate) enquanto  - Som: pulo duplo (miado de gato); 
+recolhe os itens (cadernos, bolsas, etc) [som: pegar  - Som: pegar item;
+item].  Existe  um  marcador  de  pontuação  que  - Som: cair da bicicleta;
+aumenta enquanto a Rocker Girl estiver na bicicleta 
+e ganha bonus cada vez que ela pega itens. Quando  Programação:
+ela pega um item o mesmo aparece grande no meio  - Loading;
+da  tela  (propaganda  dos  produtos).  Após  algum  - Tela de abertura com botão;
+tempo  ela  chega  no  fim  da  fase  e  o  processo  se  - Tela da História em Quadrinhos com botão;
+repete  em  mais  3  trechos  do  parque  (chafariz,  - Tela se movendo automaticamente;
+brinquedos, castelinhos), porém com a velocidade  - Rockergirl seguindo a tela;
+incrementada  [músicas para cada fase]. Quando ela  - Câmera seguindo personagem;
+cair  [som:  cair]  aparece  uma  mensagem  na  tela  - Pulo da Rockergirl;
+comentando sua  pontuação, os pontos e  três links:  - Pulo duplo da Rockergirl;
+‘publique sua pontuação’, ‘poste no twitter’ e ‘poste  - Pontuação automática por tempo;
+no facebook’ e também informando pra clicar num  - Recolher itens, pontuar e exibi-los na tela;
+botão pra jogar novamente [música de game over].” - Terminar fase e começar outra mais rápido;
+  Com  base  neste  texto  corrido,  com  marcações  de  - Morrer;
+arte, programação e [sons] o game designer fazendo um papel  - Postar pontos no Twitter e Facebook;
+de gerente  do projeto, identificou no texto corrido os assets,  - Enviar pontos para o ranking (form PHP);
+elementos de interface, música  e programação que  deveriam  - Cadastrar jogador no DB do ranking;
+ser  criados,  criando  então  três  listas,  que  então  foram  - Botão para reiniciar: volta para 1º fase.
+repassadas para a equipe.
+Devido a formatação deste artigo, serão apresentadas as listas 
+de elementos do jogo fora da tabela. Para o desenvolvimento 
+do  jogo  Rockergirl  Bikeway,  com  base  no  texto  mostrado 
+anteriormente  seria  necessário  desenvolver  os  seguintes 
+elementos:
+Arte:
+- Tela de Loading (marcas Produtora, Cadersil, Agência);
+- Tela Inicial (logotipo + composição);
+- História em Quadrinhos;
+- Interface: Controles;
+- Animação: Rockergirl pedalando;
+- Animação: Rockergirl pulando (2);
+- Animação: Rockergirl caindo;
+- Tileset: pista da Rockergirl;
+- Tileset #1: flores ao redor, buraco no meio;
+- Tileset #2: água ao redor, poça no meio;
+- Tileset #3: muros pixados ao redor, buraco no meio;
+- Tileset #4: grades ao redor, bueiro aberto no meio;
+- Props #1: árvore, moita;
+- Props #2: chafariz, fonte;
+- Props #3: half-pipe, rampa;
+- Props #4: castelo, estátua;
+- Background: Nuvens;
+- Interface: Pontuação;
+- Interface: Itens pra recolher: 16 cadernos;
+Fig. 5. Short Game Design Document. Dados do autor.
+
+119SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+  Este documento ao ser finalizado coube  exatamente  experiências anteriores com o SGDD, nos jogos Siart  e Dr. 
+numa página formato A4 (Fig. 5) e foi desenvolvido em pouco  Goldeinstein foi necessária uma  descrição de  personagens e 
+mais de duas horas de trabalho do game designer. O SGDD foi  elementos visuais, mesmo que categorizando o estilo apenas 
+a única documentação usada para o desenvolvimento do jogo  como  “cartoon”  ou “pixel art”. Outro elemento que  não  foi 
+Rockergirl  Bikeway  (Fig.  6),  obviamente  levando  em  descrito no SDGG estudado foi o “level design”, ou projeto 
+consideração que  a  personagem já  existia e foi usada  a sua  das fases, que neste caso foi realizado diretamente pelo game 
+identidade visual no jogo, como acontece em outros diversos  designer  na  engine  utilizada,  após  todo  o  processo.  Nesta 
+advergames.  situação  ou  nesta  equipe,  o  game  designer  era  capaz  de 
+  Utilizando o SGDD o diretor do jogo pôde orientar e  realizar esta tarefa, mas em outra situação provavelmente seria 
+verificar  o  andamento  das  tarefas  de  artistas,  músicos  e  necessário um artefato  atrelado ao  SDGG para descrever  os 
+programadores,  que  muitas  vezes  trabalhavam  em  locais  levels.
+diferentes mas usavam o documento como referência. Após a    Outra questão importante reside na liberdade criativa 
+criação  de  todos  estes  elementos,  o  game  designer  pôde  que  é  dada  a  um  artista  quando  o  mesmo  recebe  uma 
+trabalhar  sozinho,  diretamente  na  engine,  nos  levels  e  informação  tão  básica  quando  “Animação:  Rockergirl 
+balanceamento  do  jogo,  que  neste  caso  foram  feitos  sem  pedalando” e obviamente tem que estar muito bem informado 
+documentação, utilizando  uma  lógica  matemática  para  criar  do conceito e da experiência que  se deseja transmitir  com o 
+uma dificuldade progressiva com base nos desafios propostos  jogo, para  que  todas as artes  possam ser  adequadas para  o 
+no  SGGD. O  jogo foi desenvolvido  com todos os  assets e  jogo. Da  mesma  forma  o  músico  tem  que  estar  ciente  das 
+músicas  originais, utilizando  a  engine  Stencyl  que  publica  mecânicas de jogos, da progressão nos levels, para criar trilhas 
+jogos  em  com  a  tecnologia  Flash.  O  resultado  final  do  sonoras que combinem realmente com o jogo. Neste aspecto o 
+desenvolvimento do jogo Rockergirl Bikeway pode ser visto  SGDD dá muita liberdade devido a suas descrições curtas, que 
+em http://rockergirl.com.br/jogos/bikeway em pequenos grupos que trabalham junto há tempo podem dar 
+bons  resultados.  Quando  houve  dúvidas  o  SDGG  foi 
+consultado  e  justamente  por ser uma  leitura  rápida  realizou 
+seu  papel  de  informar  a  equipe  e  manter  todos  no  mesmo 
+rumo.
+  Levando  em  consideração  os  aspectos  acima,  o 
+SGDD demonstrou ser uma ferramenta eficaz no processo de 
+desenvolvimento de jogos curtos ou advergames. A principal 
+vantagem reside na sua produção rápida e consequentemente 
+no  início  rápido  do  processo  de  desenvolvimento  do  jogo, 
+além disso, foi percebido que os membros da equipe realmente 
+faziam o “jogo mental” citado por Rolling e Morris [10] ao ler 
+o documento, ficando cientes de todo o processo e  definindo 
+elementos  críticos  do  projeto,  estando  aí  talvez  uma  nova 
+necessidade para o SGDD: apresentar a lista de elementos em 
+Fig. 6. Jogo Rockergirl Bikeway. Dados do autor. ordem de  importância para o projeto, para que um protótipo 
+possa ser gerado o mais rápido possível. 
+CONCLUSÕES   Para o game designer, desenvolver um documento de 
+  É possível perceber que atualmente existem diversos  projeto onde ele “descreve” um jogo como se “contasse uma 
+pequenos grupos de desenvolvimento de jogos, sejam grupos  história” se torna algo bem mais simples do que descrever o 
+que se  reúnem para  jams, estúdios independentes ou mesmo  jogo em “pedaços”, assim como, para todo membro da equipe 
+pequenas empresas e  agências de  publicidade que  trabalham  que ler o documento, o jogo se tornará mais “vívido” em sua 
+com  advergames.  O  fato  é  que  neste  contexto,  extensos  mente, facilitando até o entendimento das razões pelas quais o 
+documentos de  design de jogo acabam por  tomar um tempo  jogo foi projetado daquela forma. 
+precioso  destes  profissionais, que  muitas  vezes  tem  prazos    O  fato é  que  nos quatro jogos citados  neste  artigo, 
+“apertados”  para  cumprir.  Esta  pesquisa  surgiu  desta  que  foram  fundamentais  para  a  formatação  inicial  do 
+necessidade  pungente  de trabalhar com documentos rápidos,  documento/técnica, o  uso  do  SGDD  deixou  o  processo  de 
+que sejam fáceis de entender e consultar, e possam contribuir  concepção  mais rápido e  dinâmico, sendo  uma solução que 
+para  profissionais  que  trabalham  neste  contexto  de  atendeu  perfeitamente  a  demanda  para  jogos  curtos  e 
+desenvolvimento. advergames. 
+  No  experimento  em  questão,  um  aspecto  deve  ser    Após  a  realização  do  experimento  descrito  neste 
+destacado:  é  importante  levar  em  consideração  que  toda  a  artigo, o SGDD foi utilizado em mais quatro jams, na Ludum 
+identidade  visual,  assim  como  personagens  da  linha  de  Dare,  edições  #24,  #25  e  #26,  originando  os  jogos  Allel 
+cadernos “Rockergirl” já existiam, não foi preciso descrever  [www.kaipora.com/allel], Kill the Hero [ www.kaipora.com/
+ou mesmo conceber estes personagens e toda a arte gerada foi  killthehero] e  S [ www.kaipora.com/s ]; e  na Global Game 
+produzida  com  base  num  conjunto  de  elementos  que  já  Jam 2013, originando o jogo Braveheart [ www.kaipora.com/
+existiam, bastando ao artista apenas “seguir” aquele estilo. Em 
+
+120SBC – Proceedings of SBGames 2013  Art & Design Track – Full Papers
+
+braveheart].  Além  destes  jogos  realizados  em  períodos  comparações. Em segundo lugar, verificar  a possibilidade de 
+extremamente  curtos  (48  horas  geralmente),  o  SGDD  foi  inclusão  de  elementos  visuais no  SGDD, visto  que  um dos 
+utilizado durante  dois períodos  na componente  Metodologia  elementos identificados nos game documents “informais” é o 
+de  Projetos  de  Jogos Digitais  no  Curso  Superior  de  Jogos  uso  de  gráficos  e  esquemas,  que  foram  suprimidos  neste 
+Digitais da Facisa, onde se estuda aspectos das metodologias  primeiro design do SGDD. Por fim, verificar as ferramentas 
+ágeis de projeto, dando origem ao jogo Run Meme Run (Fig.  multimidias online existentes com o objetivo de adequá-las ao 
+7) [www.rodrigomotta.com/runmemerun]. uso do SGDD ou mesmo verificar a possibilidade da criação 
+de uma ferramenta digital interativa baseada no SGDD.
+REFERÊNCIAS
+[1] E. Bethke. Game Development and Production. New York: Wordware 
+Publishing, Inc: Sudbury. 2008.
+[2] B. Kreimeier. Game Design Methods: A 2003 Survey. Disponível em: 
+<http://www.gamasutra.com/  view/feature/2892/ 
+game_design_methods_a_2003_survey.php> Acesso em: 4 de Julho de 
+2012. 
+[3] Jeannie  Novak.  Game  Development  Essentials.  Delmar  Carnage 
+Learning, 2007.
+[4] R.  Pedersen.  Game  design  foundations.  1.ED.  Sudbury:  Wordware 
+publishing, INC. 2003.
+[5] E. Adams. The  Designer's Notebook: Why Design Documents Matter. 
+Disponível  em:  <http://  www.gamasutra.com/view/feature/1522/ 
+the_designers_notebook_why_.php>. 2007. Acesso em: 3 de  Julho de 
+2012.
+[6] L.  Souza.  Multimídia  como  alternativa  para  documentação  no 
+Fig. 7. Jogo Run Meme Run. Dados do autor. desenvolvimento de jogos digitais. Dissertação (Mestrado em Design) - 
+Programa  de  Pós  Graduação  em  Design,  Universidade  Federal  de 
+  Em todas as ocasiões os jogos desenvolvidos tiveram  Pernambuco. 2011.
+assets  (arte  e  música)  completamente  originais  e  o  SGDD  [7] T. Ryan. Learning the Ways of the Game Development Wiki. Disponível 
+mostrou-se  eficaz  como  documentação  para  o  em:  http://www.gamasutra.com/view/  feature/4094/
+learning_the_ways_of_the_game_.php? page=. Acesso em: 10 de junho 
+desenvolvimento  ágil  de  jogos  de  pequeno  porte  ou  de 2011.
+advergames, sendo utilizado por equipes diferentes e obtendo  [8] R.  Rouse  III.  Game  design:  Theory  &  Practice.  1a  ed.  Sudbury: 
+resultados satisfatórios. Wordware publishing,Inc. 2001.
+  Três  desdobramentos  estão  previstos  para  esta  [9] Jesse  Schell. The  Art  of  Game  Design. Morgan Kaufman Publishers, 
+pesquisa: primeiramente  analisar  o uso do SGDD atrelado à  2008.
+metodologias  de  gerenciamento  ágeis  de  projetos,  como  o  [10] A. Rollings; D. Morris. Game Architecture And Design: A New Edition. 
+Scrum. Esta ação já está ocorrendo e espera-se que em breve  Berkley: New Riders Publishing. 2004.
+[11] Scott Rogers. Level Up. Um guia para o design de grandes jogos. São 
+seja  possível  ter  dados  suficientes  para  análises  e  Paulo: Blucher, 2012.
+
+121
